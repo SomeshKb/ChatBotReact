@@ -17,7 +17,7 @@ import src from "../images/dashboard-drawing.svg";
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    background: "rgb(247, 249, 250)",
+    background: "rgb(242 251 255)",
     borderBottom: "1px solid #eeeeee",
     borderBottomRightRadius: "100%",
   },
