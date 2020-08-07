@@ -6,6 +6,7 @@ import dribbbleLogo from "../images/dribbble.svg";
 import instagramLogo from "../images/instagram.svg";
 import netflixLogo from "../images/netflix.svg";
 import pinterestLogo from "../images/pinterest.svg";
+import Section from "./Section";
 
 const useStyles = makeStyles((theme) => ({
   image: {
@@ -29,7 +30,7 @@ function Component({ img: { logo, alt } }) {
 
 export default function Section3({ sectionStyles }) {
   return (
-    <section style={{ ...sectionStyles, padding: "96px 16px" }}>
+    <Section style={{ padding: "96px 16px" }}>
       <Grid container alignItems="center" justify="space-between">
         <Component img={{ logo: airbnblogo, alt: "Airbnb" }} />
         <Component img={{ logo: coinBaseLogo, alt: "Coinbase" }} />
@@ -38,6 +39,6 @@ export default function Section3({ sectionStyles }) {
         <Component img={{ logo: netflixLogo, alt: "Netflix" }} />
         <Component img={{ logo: pinterestLogo, alt: "Pinterest" }} />
       </Grid>
-    </section>
+    </Section>
   );
 }

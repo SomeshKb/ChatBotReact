@@ -3,6 +3,7 @@ import { Grid, Avatar, makeStyles, Typography } from "@material-ui/core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLayerGroup, faCode } from "@fortawesome/free-solid-svg-icons";
 import { faSketch } from "@fortawesome/free-brands-svg-icons";
+import Section from "./Section";
 
 const useStyles = makeStyles((theme) => ({
   avatar: { borderRadius: 16, width: 70, height: 70, background: "#e8eaf6" },
@@ -42,7 +43,7 @@ const Component = ({ subTitle, title, icon }) => {
 
 export default function Section2({ sectionStyles }) {
   return (
-    <section style={sectionStyles}>
+    <Section>
       <Grid container spacing={4}>
         <Component
           title="Build for developers"
@@ -60,6 +61,6 @@ export default function Section2({ sectionStyles }) {
           icon={faCode}
         />
       </Grid>
-    </section>
+    </Section>
   );
 }

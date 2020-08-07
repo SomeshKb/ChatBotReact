@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid, Typography, makeStyles, Button } from "@material-ui/core";
 import image from "../images/mind-map.svg";
+import Section from "./Section";
 
 const useStyles = makeStyles((theme) => ({
   typography: { fontWeight: "bold" },
@@ -12,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Section1({ sectionStyles }) {
   const classes = useStyles();
   return (
-    <section style={sectionStyles}>
+    <Section>
       <Grid container justify="space-between" spacing={4}>
         <Grid item xs={12} md={6}>
           <Grid container spacing={2}>
@@ -61,6 +62,6 @@ export default function Section1({ sectionStyles }) {
           ></img>
         </Grid>
       </Grid>
-    </section>
+    </Section>
   );
 }
