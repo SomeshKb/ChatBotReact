@@ -28,7 +28,7 @@ function Component({ img: { logo, alt } }) {
   );
 }
 
-export default function Section3({ sectionStyles }) {
+export default function Section3() {
   return (
     <Section style={{ padding: "96px 16px" }}>
       <Grid container alignItems="center" justify="space-between">
