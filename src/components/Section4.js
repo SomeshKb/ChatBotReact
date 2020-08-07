@@ -61,7 +61,7 @@ function LeftSection() {
             className={classes.image}
             alt="Contact cover"
             src={src}
-            srcset={srcSet}
+            srcSet={srcSet}
           />
         </CardMedia>
         <CardContent className={classes.cardContent}>
