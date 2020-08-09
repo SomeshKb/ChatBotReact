@@ -10,9 +10,11 @@ import {
   ListItem,
   Button,
   Hidden,
+  IconButton,
 } from "@material-ui/core";
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 import logo from "../images/logo.svg";
+import MenuIcon from "@material-ui/icons/Menu";
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
@@ -58,7 +60,7 @@ export default function Header() {
         <Hidden smDown>
           <List className={classes.nav}>
             <ListItem>
-              <ListItemText primary="Drafts" />
+              <ListItemText primary="Drafts" ty />
               <ListItemIcon>
                 <KeyboardArrowDownIcon />
               </ListItemIcon>
@@ -69,6 +71,11 @@ export default function Header() {
               </Button>
             </ListItem>
           </List>
+        </Hidden>
+        <Hidden smUp>
+          <IconButton color="inherit" aria-label="open drawer" edge="start">
+            <MenuIcon />
+          </IconButton>
         </Hidden>
       </Toolbar>
     </AppBar>

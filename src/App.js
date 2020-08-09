@@ -15,6 +15,7 @@ import Header from "./components/Header";
 import Content from "./components/Content";
 import "./App.css";
 import Footer from "./components/Footer";
+import { Drawer, Hidden } from "@material-ui/core";
 
 let theme = createMuiTheme({
   palette: {
@@ -48,6 +49,12 @@ function App() {
           <Content />
         </main>
         <Footer />
+        <Hidden smUp>
+          <Drawer
+            variant="temporary"
+            anchor={theme.direction === "rtl" ? "right" : "left"}
+          ></Drawer>
+        </Hidden>
       </div>
     </ThemeProvider>
   );
