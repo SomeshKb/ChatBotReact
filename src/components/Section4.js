@@ -207,13 +207,11 @@ function RightSection() {
 
 export default function Section4() {
   return (
-    <div style={{ background: "rgb(242 251 255)" }}>
-      <Section>
-        <Grid container spacing={4}>
-          <LeftSection />
-          <RightSection />
-        </Grid>
-      </Section>
-    </div>
+    <Section>
+      <Grid container spacing={4}>
+        <LeftSection />
+        <RightSection />
+      </Grid>
+    </Section>
   );
 }

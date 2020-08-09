@@ -117,11 +117,9 @@ function Bottom() {
 
 export default function Section7() {
   return (
-    <div style={{ background: "rgb(242 251 255)" }}>
-      <Section>
-        <Top />
-        <Bottom />
-      </Section>
-    </div>
+    <Section>
+      <Top />
+      <Bottom />
+    </Section>
   );
 }
