@@ -9,6 +9,7 @@ import {
   ListItemText,
   ListItem,
   Button,
+  Hidden,
 } from "@material-ui/core";
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 import logo from "../images/logo.svg";
@@ -54,19 +55,21 @@ export default function Header() {
             </a>
           </div>
         </div>
-        <List className={classes.nav}>
-          <ListItem>
-            <ListItemText primary="Drafts" />
-            <ListItemIcon>
-              <KeyboardArrowDownIcon />
-            </ListItemIcon>
-          </ListItem>
-          <ListItem>
-            <Button variant="contained" color="primary" size="large">
-              Primary
-            </Button>
-          </ListItem>
-        </List>
+        <Hidden smDown>
+          <List className={classes.nav}>
+            <ListItem>
+              <ListItemText primary="Drafts" />
+              <ListItemIcon>
+                <KeyboardArrowDownIcon />
+              </ListItemIcon>
+            </ListItem>
+            <ListItem>
+              <Button variant="contained" color="primary" size="large">
+                Primary
+              </Button>
+            </ListItem>
+          </List>
+        </Hidden>
       </Toolbar>
     </AppBar>
   );
