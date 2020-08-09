@@ -15,8 +15,8 @@ import {
 } from "@material-ui/core";
 import src from "../images/place3.jpg";
 import srcSet from "../images/place3@2x.jpg";
-import Section from "./Section";
-import Typed from "./Typed";
+import Section from "../components/Section";
+import Typed from "../components/Typed";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 

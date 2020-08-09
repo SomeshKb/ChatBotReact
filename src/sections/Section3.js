@@ -6,7 +6,7 @@ import dribbbleLogo from "../images/dribbble.svg";
 import instagramLogo from "../images/instagram.svg";
 import netflixLogo from "../images/netflix.svg";
 import pinterestLogo from "../images/pinterest.svg";
-import Section from "./Section";
+import Section from "../components/Section";
 
 const useStyles = makeStyles((theme) => ({
   image: {

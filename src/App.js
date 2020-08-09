@@ -14,6 +14,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import Header from "./components/Header";
 import Content from "./components/Content";
 import "./App.css";
+import Footer from "./components/Footer";
 
 let theme = createMuiTheme({
   palette: {
@@ -42,30 +43,12 @@ function App() {
       {/* <div className={classes.root}> */}
       <CssBaseline />
       <div>
-        {/* <nav className={classes.drawer}>
-          <Hidden smUp implementation="js">
-            <Navigator
-              PaperProps={{ style: { width: drawerWidth } }}
-              variant="temporary"
-              open={mobileOpen}
-              onClose={handleDrawerToggle}
-            />
-          </Hidden>
-          <Hidden xsDown implementation="css">
-            <Navigator PaperProps={{ style: { width: drawerWidth } }} />
-          </Hidden>
-        </nav> */}
-        {/* <div className={classes.app}> */}
         <Header />
         <main>
           <Content />
         </main>
+        <Footer />
       </div>
-      {/* <footer className={classes.footer}>
-          <Copyright />
-        </footer> */}
-      {/* </div> */}
-      {/* </div> */}
     </ThemeProvider>
   );
 }

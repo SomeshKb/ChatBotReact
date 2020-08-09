@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, Typography, makeStyles, Button } from "@material-ui/core";
 import image from "../images/mind-map.svg";
-import Section from "./Section";
+import Section from "../components/Section";
 
 const useStyles = makeStyles((theme) => ({
   typography: { fontWeight: "bold" },

@@ -3,7 +3,7 @@ import { Grid, Avatar, makeStyles, Typography } from "@material-ui/core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLayerGroup, faCode } from "@fortawesome/free-solid-svg-icons";
 import { faSketch } from "@fortawesome/free-brands-svg-icons";
-import Section from "./Section";
+import Section from "../components/Section";
 
 const useStyles = makeStyles((theme) => ({
   avatar: { borderRadius: 16, width: 70, height: 70, background: "#e8eaf6" },

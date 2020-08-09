@@ -1,14 +1,16 @@
 import React from "react";
-import Section1 from "./Section1";
 import { Divider } from "@material-ui/core";
-import Section2 from "./Section2";
-import Section3 from "./Section3";
-import Section4 from "./Section4";
-import Section5 from "./Section5";
-import Section6 from "./Section6";
-import Section7 from "./Section7";
-import Section8 from "./Section8";
-import Section9 from "./Section9";
+
+import Section1 from "../sections/Section1";
+import Section2 from "../sections/Section2";
+import Section3 from "../sections/Section3";
+import Section4 from "../sections/Section4";
+import Section5 from "../sections/Section5";
+import Section6 from "../sections/Section6";
+import Section7 from "../sections/Section7";
+import Section8 from "../sections/Section8";
+import Section9 from "../sections/Section9";
+import Section10 from "../sections/Section10";
 
 export default function Content() {
   return (
@@ -27,8 +29,15 @@ export default function Content() {
         <Section7 />
       </div>
       <Section8 />
-      <div style={{ background: "rgb(242 251 255)" }}>
+      <div
+        style={{
+          background: "rgb(242 251 255)",
+          borderBottom: "1px solid #eeeeee",
+          borderBottomRightRadius: "100%",
+        }}
+      >
         <Section9 />
+        <Section10 />
       </div>
     </>
   );

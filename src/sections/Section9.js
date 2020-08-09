@@ -11,7 +11,7 @@ import {
   ListItem,
   Button,
 } from "@material-ui/core";
-import Section from "./Section";
+import Section from "../components/Section";
 import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-regular-svg-icons";
@@ -173,7 +173,7 @@ function Top() {
 }
 export default function Section9() {
   return (
-    <Section>
+    <Section style={{ padding: "96px 16px" }}>
       <Top />
       <Bottom />
     </Section>
