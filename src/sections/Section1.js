@@ -31,16 +31,15 @@ function LeftSection() {
             className={classes.typography}
           >
             <span>
-              Welcome to <span className={classes.span}>TheFront.</span>
+              Welcome to <span className={classes.span}>Chatbot.io</span>
               <br />
-              <span>Develop anything your business needs.</span>
+              <span>Create AI chatbots, easily</span>
             </span>
           </Typography>
         </Grid>
         <Grid item xs={12}>
           <Typography variant="h6" align="left" color="textSecondary">
-            Build a beautiful, modern website with flexible, fully customizable,
-            atomic Material UI components.
+           Choose from a vast number of AI based chatbots or build yourself one. 
           </Typography>
         </Grid>
         <Grid item xs={12}>
