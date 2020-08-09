@@ -2,7 +2,7 @@ import React from "react";
 import { createStyles } from "@material-ui/core";
 const useStyles = createStyles((theme) => ({
   section: {
-    padding: "40px 16px",
+    padding: "40px 8px",
     maxWidth: 1100,
     margin: "0 auto",
     width: "100%",

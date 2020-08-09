@@ -108,7 +108,7 @@ function Bottom() {
 
 export default function Section10() {
   return (
-    <Section style={{ padding: "96px 16px" }}>
+    <Section style={{ padding: "96px 8px" }}>
       <Grid container spacing={4}>
         <Top />
         <Bottom />

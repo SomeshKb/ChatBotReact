@@ -30,7 +30,7 @@ function Component({ img: { logo, alt } }) {
 
 export default function Section3() {
   return (
-    <Section style={{ padding: "96px 16px" }}>
+    <Section style={{ padding: "96px 8px" }}>
       <Grid container alignItems="center" justify="space-between">
         <Component img={{ logo: airbnblogo, alt: "Airbnb" }} />
         <Component img={{ logo: coinBaseLogo, alt: "Coinbase" }} />

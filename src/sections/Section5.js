@@ -107,7 +107,7 @@ export default function Section5() {
   const classes = useStyles();
   return (
     <div className={classes.container}>
-      <Section style={{ padding: "96px 16px" }}>
+      <Section style={{ padding: "96px 8px" }}>
         <Grid container spacing={4}>
           <LeftSection />
           <RightSection />

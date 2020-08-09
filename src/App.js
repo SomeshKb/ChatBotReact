@@ -17,7 +17,7 @@ import "./App.css";
 import Footer from "./components/Footer";
 import { Drawer, Hidden } from "@material-ui/core";
 
-let theme = createMuiTheme({
+const defaultTheme = createMuiTheme({
   palette: {
     secondary: { main: "#F9B934" },
     text: {
@@ -27,12 +27,26 @@ let theme = createMuiTheme({
   },
 });
 
-theme = {
-  ...theme,
+const { breakpoints } = defaultTheme;
+
+let theme = {
+  ...defaultTheme,
   overrides: {
     MuiDrawer: {
       paper: {
         backgroundColor: "#ffffff",
+      },
+    },
+    MuiTypography: {
+      h3: {
+        [breakpoints.down("xs")]: {
+          fontSize: "2rem",
+        },
+      },
+      h6: {
+        [breakpoints.down("xs")]: {
+          fontSize: "1.125rem",
+        },
       },
     },
   },

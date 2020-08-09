@@ -104,7 +104,7 @@ function Bottom() {
   const classes = useStyles();
   return (
     <div className={classes.image}>
-      <Section style={{ padding: "96px 16px" }}>
+      <Section style={{ padding: "96px 8px" }}>
         <Grid container className={classes.imagesContainer}>
           <Grid container item xs={4}>
             <Grid item xs={6}>
@@ -144,7 +144,7 @@ function Bottom() {
 
 export default function Section6() {
   return (
-    <Section style={{ padding: "96px 16px" }}>
+    <Section style={{ padding: "96px 8px" }}>
       <Top />
       <Bottom />
     </Section>

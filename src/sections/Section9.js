@@ -173,7 +173,7 @@ function Top() {
 }
 export default function Section9() {
   return (
-    <Section style={{ padding: "96px 16px" }}>
+    <Section style={{ padding: "96px 8px" }}>
       <Top />
       <Bottom />
     </Section>
