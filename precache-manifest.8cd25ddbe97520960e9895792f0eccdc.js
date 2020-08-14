@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d074f22b8ebec702bf56c68ec8cbb69b",
+    "revision": "12ea2978a886ca5f494760935af31cb9",
     "url": "/ChatBotReact/index.html"
   },
   {
-    "revision": "b0df3cbd4d64839b3388",
-    "url": "/ChatBotReact/static/css/main.5f361e03.chunk.css"
+    "revision": "a69e46e44e358ea1bb38",
+    "url": "/ChatBotReact/static/css/main.3ddbf897.chunk.css"
   },
   {
-    "revision": "3461dd45290a2c5cdd83",
-    "url": "/ChatBotReact/static/js/2.b0615db3.chunk.js"
+    "revision": "bd200af2cae1a1679421",
+    "url": "/ChatBotReact/static/js/2.8374225f.chunk.js"
   },
   {
     "revision": "e804173c8fa71a5e7521e4cc79a362af",
-    "url": "/ChatBotReact/static/js/2.b0615db3.chunk.js.LICENSE.txt"
+    "url": "/ChatBotReact/static/js/2.8374225f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b0df3cbd4d64839b3388",
-    "url": "/ChatBotReact/static/js/main.8645cf22.chunk.js"
+    "revision": "a69e46e44e358ea1bb38",
+    "url": "/ChatBotReact/static/js/main.f7799d5c.chunk.js"
   },
   {
     "revision": "0184054c6dd4120d3bc6",
