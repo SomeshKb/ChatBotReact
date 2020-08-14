@@ -16,6 +16,7 @@ import Content from "./components/Content";
 import "./App.css";
 import Footer from "./components/Footer";
 import { Drawer, Hidden } from "@material-ui/core";
+import ChatBot from './chatbot'
 
 const defaultTheme = createMuiTheme({
   palette: {
@@ -61,6 +62,7 @@ function App() {
         <Header />
         <main>
           <Content />
+          <ChatBot />
         </main>
         <Footer />
         <Hidden smUp>
