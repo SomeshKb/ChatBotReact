@@ -5,7 +5,7 @@ import MessageIcon from "@material-ui/icons/Message";
 import { makeStyles, Fab, Popper, CssBaseline } from "@material-ui/core";
 import PopperContent from "./PopperContent";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
-import { purple, green } from "@material-ui/core/colors";
+import { green } from "@material-ui/core/colors";
 
 const useStyles = makeStyles((theme) => ({
     fab: {
@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
 const defaultTheme = createMuiTheme({
     palette: {
         primary: {
-            main: purple[500]
+            main: "#3f51b5"   // TODO To change
         },
         secondary: {
             main: green[500]
