@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     message: {
         padding: 10,
         background: theme.palette.secondary.main,
-        maxWidth: 300,  
+        maxWidth: 300,
         wordBreak: "break-all",
         color: colors.common.white,
         margin: "0px 5px"
@@ -157,45 +157,12 @@ export default function PopperContent({ getResponse }) {
         const newMessageList = [...messageList, { type: "user", message: text }];
         setMessageList(newMessageList);
         setTimeout(() => (ref.current.scrollTop = ref.current.scrollHeight));
-
-
         setText("");
-        const requestOptions = {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ message: text })
-        };
-
-        // CODE START BY SOMESH 
-        // TODO : MODIFY IT ACCORDING TO CORRECT IMPLEMENTATION
-        setLoading(true);
-        fetch('https://medicine-chat.herokuapp.com/api/predict', requestOptions)
-            .then(async response => {
-                const data = await response.json();
-                setLoading(false);
-    
-                setMessageList([...newMessageList, { type: "bot", message: data.Message }]);
-                setTimeout(() => (ref.current.scrollTop = ref.current.scrollHeight));
-
-                // check for error response
-                if (!response.ok) {
-                    // get error message from body or default to response status
-                    const error = (data && data.message) || response.status;
-                    return Promise.reject(error);
-                }
-    
-            })
-            .catch(error => {
-                console.error('There was an error!', error);
-                setLoading(false);
-            });
-            // CODE END BY SOMESH
-
         if (getResponse) {
             setLoading(true);
-            const res = await getResponse();
+            const res = await getResponse(text);
             setLoading(false);
-            setMessageList([...newMessageList, { type: "bot", message: res }]);
+            setMessageList([...newMessageList, { type: "bot", message: res.Message }]);
             setTimeout(() => (ref.current.scrollTop = ref.current.scrollHeight));
         }
     };

@@ -5,7 +5,7 @@ import MessageIcon from "@material-ui/icons/Message";
 import { makeStyles, Fab, Popper, CssBaseline } from "@material-ui/core";
 import PopperContent from "./PopperContent";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
-import { green } from "@material-ui/core/colors";
+import { green, purple } from "@material-ui/core/colors";
 
 const useStyles = makeStyles((theme) => ({
     fab: {
@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
 const defaultTheme = createMuiTheme({
     palette: {
         primary: {
-            main: "#3f51b5"   // TODO To change
+            main: purple[500]
         },
         secondary: {
             main: green[500]
@@ -37,21 +37,21 @@ const defaultTheme = createMuiTheme({
     }
 });
 
-const theme = {
-    ...defaultTheme,
-    overrides: {
-        MuiCardContent: {
-            root: {
-                padding: 0,
-                "&:last-child": {
-                    paddingBottom: 0
+export default function ChatBot({ getResponse, theme: overrideTheme }) {
+    const theme = {
+        ...defaultTheme,
+        ...overrideTheme,
+        overrides: {
+            MuiCardContent: {
+                root: {
+                    padding: 0,
+                    "&:last-child": {
+                        paddingBottom: 0
+                    }
                 }
             }
         }
-    }
-};
-
-export default function ChatBot({ getResponse }) {
+    };
     const classes = useStyles();
 
     const [anchorEl, setAnchorEl] = useState(null);

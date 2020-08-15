@@ -53,6 +53,32 @@ let theme = {
   },
 };
 
+const getResponse = async (text) => {
+
+  const requestOptions = {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ message: text })
+  };
+  try {
+    const response = await fetch('https://medicine-chat.herokuapp.com/api/predict', requestOptions)
+    const data = await response.json()
+
+    // check for error response
+    if (!response.ok) {
+      // get error message from body or default to response status
+      const error = (data && data.message) || response.status;
+      return Promise.reject(error);
+    }
+
+    return data
+  } catch (error) {
+    console.error('There was an error!', error);
+    return { Message: 'There was an error!' }
+  }
+
+}
+
 function App() {
   return (
     <ThemeProvider theme={theme}>
@@ -62,7 +88,10 @@ function App() {
         <Header />
         <main>
           <Content />
-          <ChatBot />
+          <ChatBot
+            getResponse={text => getResponse(text)}
+            theme={theme}
+          />
         </main>
         <Footer />
         <Hidden smUp>
