@@ -39,7 +39,8 @@ function LeftSection() {
         </Grid>
         <Grid item xs={12}>
           <Typography variant="h6" align="left" color="textSecondary">
-           Choose from a vast number of AI based chatbots or build yourself one. 
+            Choose from a vast number of AI based chatbots or build yourself
+            one.
           </Typography>
         </Grid>
         <Grid item xs={12}>

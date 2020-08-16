@@ -25,14 +25,14 @@ const Dot = styled.div`
   animation-delay: ${(props) => props.delay};
 `;
 class LoadingDots extends Component {
-    render() {
-        return (
-            <DotWrapper>
-                <Dot delay="0s" />
-                <Dot delay=".2s" />
-                <Dot delay=".4s" />
-            </DotWrapper>
-        );
-    }
+  render() {
+    return (
+      <DotWrapper>
+        <Dot delay="0s" />
+        <Dot delay=".2s" />
+        <Dot delay=".4s" />
+      </DotWrapper>
+    );
+  }
 }
 export default LoadingDots;

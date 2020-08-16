@@ -16,7 +16,7 @@ import Content from "./components/Content";
 import "./App.css";
 import Footer from "./components/Footer";
 import { Drawer, Hidden } from "@material-ui/core";
-import ChatBot from './chatbot'
+import ChatBot from "./chatbot";
 
 const defaultTheme = createMuiTheme({
   palette: {
@@ -54,15 +54,17 @@ let theme = {
 };
 
 const getResponse = async (text) => {
-
   const requestOptions = {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ message: text })
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ message: text }),
   };
   try {
-    const response = await fetch('https://medicine-chat.herokuapp.com/api/predict', requestOptions)
-    const data = await response.json()
+    const response = await fetch(
+      "https://medicine-chat.herokuapp.com/api/predict",
+      requestOptions
+    );
+    const data = await response.json();
 
     // check for error response
     if (!response.ok) {
@@ -71,13 +73,12 @@ const getResponse = async (text) => {
       return Promise.reject(error);
     }
 
-    return data
+    return data;
   } catch (error) {
-    console.error('There was an error!', error);
-    return { Message: 'There was an error!' }
+    console.error("There was an error!", error);
+    return { Message: "There was an error!" };
   }
-
-}
+};
 
 function App() {
   return (
@@ -88,10 +89,7 @@ function App() {
         <Header />
         <main>
           <Content />
-          <ChatBot
-            getResponse={text => getResponse(text)}
-            theme={theme}
-          />
+          <ChatBot getResponse={(text) => getResponse(text)} theme={theme} />
         </main>
         <Footer />
         <Hidden smUp>
