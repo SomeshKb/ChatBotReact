@@ -30,6 +30,11 @@
     "deploy": "gh-pages -d build",
     "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\""
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --pattern \"**/*.+(js|jsx|json|css|md)\" --staged"
+    }
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -47,6 +52,8 @@
   },
   "devDependencies": {
     "gh-pages": "^3.1.0",
-    "prettier": "2.0.5"
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1"
   }
 }

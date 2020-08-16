@@ -77,6 +77,7 @@ export default function ChatBot({ getResponse, theme: overrideTheme }) {
             offset: "0,10",
           },
         }}
+        popperOptions={{ positionFixed: true }}
       >
         <PopperContent getResponse={getResponse} />
       </Popper>
