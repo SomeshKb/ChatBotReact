@@ -71,9 +71,6 @@ function Top() {
         {list.map((l) => (
           <Component {...l} />
         ))}
-        {list.map((l) => (
-          <Component {...l} />
-        ))}
       </Grid>
     </Grid>
   );

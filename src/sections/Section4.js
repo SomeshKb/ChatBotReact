@@ -101,19 +101,19 @@ function RightSection() {
         <Grid container spacing={2}>
           <Grid item xs={12}>
             <Typography variant="overline" align="left" color="primary">
-              MAKE THINGS DONE
+              MAKE THINGS TALK
             </Typography>
           </Grid>
           <Grid item xs={12}>
             <Typography variant="h4" align="left">
               <span>
-                The most useful resource
+                The most amazing bot
                 <br />
                 <span className={classes.span}>ever created</span>
                 <br />
                 <span className={classes.span}>for&nbsp;</span>
                 <Typed
-                  strings={["web developers.", "designers.", "founders."]}
+                  strings={["web developers.", "founders.", "customers."]}
                   typeSpeed={40}
                   loop
                   className={classes.span}
@@ -123,10 +123,10 @@ function RightSection() {
           </Grid>
           <Grid item xs={12}>
             <Typography variant="h6" align="left" color="textSecondary">
-              Using TheFront to build your site means never worrying about
+              {/* Using TheFront to build your site means never worrying about
               designing another page or cross browser compatibility. Our
               ever-growing library of components and pre-designed layouts will
-              make your life easier.
+              make your life easier. */}
             </Typography>
           </Grid>
         </Grid>

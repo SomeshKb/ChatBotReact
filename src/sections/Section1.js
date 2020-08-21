@@ -33,20 +33,19 @@ function LeftSection() {
             <span>
               Welcome to <span className={classes.span}>Chatbot.io</span>
               <br />
-              <span>Create AI chatbots, easily</span>
+              <span>Create chatbots for you need</span>
             </span>
           </Typography>
         </Grid>
         <Grid item xs={12}>
           <Typography variant="h6" align="left" color="textSecondary">
-            Choose from a vast number of AI based chatbots or build yourself
-            one.
+            Choose from a vast number of AI based chatbots.
           </Typography>
         </Grid>
         <Grid item xs={12}>
           <Grid container wrap="nowrap" alignItems="center">
             <Button variant="contained" color="primary" size="large">
-              View Pages
+              Ask Our Bot
             </Button>
             <Button
               variant="outlined"
@@ -54,7 +53,7 @@ function LeftSection() {
               size="large"
               className={classes.button}
             >
-              Documentation
+              Know More
             </Button>
           </Grid>
         </Grid>
